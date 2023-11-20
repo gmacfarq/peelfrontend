@@ -4,7 +4,7 @@ import Market from './Market';
 import HomePage from './HomePage';
 import LoginForm from './LoginForm';
 import ProfileUpdateForm from './ProfileUpdateForm';
-import SignupForm from './SignUpForm';
+import SignUpForm from './SignUpForm';
 /** List of Route components for routing
  *
  * props:
@@ -28,7 +28,7 @@ function RoutesList({ signup, login, update, currUser }) {
         </>
         :
         <>
-          <Route path="/signup" element={<SignupForm signup={signup} />} />
+          <Route path="/signup" element={<SignUpForm signup={signup} />} />
           <Route path="/login" element={<LoginForm login={login} />} />
         </>
       }
