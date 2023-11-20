@@ -1,0 +1,130 @@
+.navbar {
+    background: linear-gradient(90deg, rgba(255,235,207,1) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, rgba(255,235,207,1) 100%);
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0px 25px 0px;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 20vw;
+    position: relative;
+    width: 100%;
+}
+
+@media screen and (min-width: 1921px) {
+    .navbar {
+        gap: 10vw;
+    }
+
+    .button,
+    .logo-wrapper,
+    .logo-frame,
+    .logo,
+    .nav-menu,
+    .div,
+    .link-wrapper {
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .navbar {
+        gap: 10vw;
+    }
+
+    .button,
+    .logo-wrapper,
+    .logo-frame,
+    .logo,
+    .nav-menu,
+    .div,
+    .link-wrapper {
+        transform: scale(0.9);
+    }
+}
+
+.button {
+    all: unset;
+    align-items: center;
+    background-color: var(--fb-9333);
+    border-radius: 100px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 16px;
+    height: 54px;
+    justify-content: center;
+    padding: 24px 32px;
+    position: relative;
+    width: 98px;
+    text-decoration: none;
+}
+
+.logo-wrapper {
+    -webkit-backdrop-filter: blur(4px) brightness(100%);
+    align-items: flex-start;
+    backdrop-filter: blur(4px) brightness(100%);
+    display: flex;
+    gap: 10px;
+    height: 95px;
+    padding: 10px 40px;
+    position: relative;
+    width: 101px;
+}
+
+.logo-frame {
+    height: 99px;
+    margin-bottom: -10px;
+    margin-top:10px;
+    margin-right: -64px;
+    position: relative;
+    width: 99px;
+}
+
+.logo {
+    height: 99px;
+    left: -32px;
+    object-fit: fill;
+    position: absolute;
+    top: -14px;
+    width: 99px;
+}
+
+.nav-menu {
+    align-items: center;
+    display: flex;
+    gap: 56px;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    width: 322px;
+}
+
+.div {
+    color: var(--ffffff);
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 20.8px;
+    margin-bottom: -6.5px;
+    margin-left: -10.5px;
+    margin-right: -10.5px;
+    margin-top: -8.5px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.link-wrapper {
+    color: var(--x-575757);
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 20.8px;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+    text-decoration: none;
+}
