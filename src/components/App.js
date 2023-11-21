@@ -54,6 +54,7 @@ function App() {
 
   /** Set token using API signup */
   async function signup(userData) {
+    console.log("test");
     const result = await PEELApi.signupUser(userData);
     setToken(result);
   }

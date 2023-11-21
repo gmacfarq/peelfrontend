@@ -63,17 +63,19 @@ function Nav({ logout }) {
 
       {currUser.data
         ?
-        <div >
-          <p className="button" onClick={logoutAndSendHome}>
-            {`Log out ${currUser.data.username}`}
-          </p>
+        <div className='signed-in' >
+          <div className="div">
+            <p className="button" onClick={logoutAndSendHome}>
+              {`Log out`}
+            </p>
+          </div>
           <NavLink className="nav-link button" to="/profile">
             <div className="div">My Profile</div>
           </NavLink>
         </div>
         :
         <div>
-          <NavLink className="nav-link button" to="/signup">
+          <NavLink className="nav-link button" to="/signin">
             <div className="div">Sign In</div>
           </NavLink>
         </div>

@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import "../stylesheets/HomePage.css";
 import "../stylesheets/StyleGuide.css";
 import userContext from "./userContext";
@@ -8,13 +9,18 @@ import {
   numberOne,
   eco
 } from "../generalPics";
+import { Navigate } from "react-router-dom";
 /** Component to render Home Page for PEEL
  *
  * RoutesList -> HomePage
  */
 function HomePage() {
+  
+  const navigate = useNavigate();
 
-  const { currUser } = useContext(userContext);
+  function sendToSignUp(){
+    navigate("/signup");
+  }
 
   return (
     <div className="home-page">
@@ -54,7 +60,7 @@ function HomePage() {
                       <p className="p">Everything we need is just around the block!</p>
                     </div>
                     <div className="div-wrapper">
-                      <div className="text-wrapper-5">Join PEEL</div>
+                      <div className="text-wrapper-5" onClick={sendToSignUp}>Join PEEL</div>
                     </div>
                   </div>
                   {/* <div className="feature-information">

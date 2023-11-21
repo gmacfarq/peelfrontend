@@ -1,0 +1,137 @@
+.form-page {
+  background: linear-gradient(90deg, rgba(255, 235, 207, 1) 0%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(255, 235, 207, 1) 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: normal;
+  width: 100%;
+  height: 80vh;
+}
+
+
+.form-page .container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  padding: 60px 120px 60px 120px;
+  position: relative;
+  width: 1439px;
+}
+
+.form-page .frame {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 30px
+}
+
+.form-page .text-wrapper {
+  color: #2b2b2b;
+  font-family: "Poppins-Medium", Helvetica;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0.64px;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.form-page .input-required {
+  display: flex;
+  align-content: center;
+  color: #2b2b2b;
+  height: 25px;
+  position: relative;
+  width: 460px;
+}
+
+.form-page .label {
+  text-align:right;
+  align-content: center;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins-Medium";
+  width: 100%;
+}
+
+.form-page .label {
+  text-align:right;
+  align-content: center;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins-Medium";
+  width: 100%;
+}
+
+.form-page .text-block {
+  align-self: flex-end;
+  background-color: var(--surfacelight);
+  border: 1px solid;
+  border-color: #5f6368;
+  border-radius: 4px;
+  color: var(--text-secondary-grey3);
+  font-family: "Poppins-Medium";
+  padding: 12px;
+  width: 70%;
+}
+
+.form-page .select-text-block {
+  align-self: flex-end;
+  background-color: var(--surfacelight);
+  border: 1px solid;
+  border-color: #5f6368;
+  border-radius: 4px;
+  color: var(--text-secondary-grey3);
+  font-family: "Poppins-Medium";
+  padding: 12px;
+  width: 40%;
+}
+
+.form-page .input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.form-page .span {
+  color: #6f7482;
+  font-family: var(--paragraph-IBM-plex-sans-regular-font-family);
+  font-size: var(--paragraph-IBM-plex-sans-regular-font-size);
+  font-style: var(--paragraph-IBM-plex-sans-regular-font-style);
+  font-weight: var(--paragraph-IBM-plex-sans-regular-font-weight);
+  letter-spacing: var(--paragraph-IBM-plex-sans-regular-letter-spacing);
+  line-height: var(--paragraph-IBM-plex-sans-regular-line-height);
+}
+
+
+
+.form-page .div {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  position: absolute;
+  bottom: 90px;
+  right: 285px;
+}
+
+.form-page .button {
+  align-items: center;
+  background-color: var(--fb-9333);
+  border-radius: 100px;
+  display: flex;
+  height: 45px;
+  justify-content: center;
+  padding: 10px 10px;
+  position: absolute;
+  width: 150px;
+}
+
+.sign-up {
+  color: var(--fb-9333);
+}

@@ -128,3 +128,9 @@
     width: fit-content;
     text-decoration: none;
 }
+
+.signed-in {
+    display:flex;
+    align-items: center;
+    gap: 15px;
+}

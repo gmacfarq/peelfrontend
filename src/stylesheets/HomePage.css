@@ -383,7 +383,6 @@
   justify-content: center;
   gap: 64px;
   height: 864px;
-  padding: 100px 135px;
   position: relative;
 }
 
@@ -394,7 +393,7 @@
   justify-content: center;
   gap: 64px;
   height: 864px;
-  padding: 100px 135px;
+  padding: 100px 100px;
   position: relative;
 }
 

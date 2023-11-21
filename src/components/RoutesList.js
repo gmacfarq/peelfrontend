@@ -2,9 +2,9 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import UserProfile from './UserProfile';
 import Market from './Market';
 import HomePage from './HomePage';
-import LoginForm from './LoginForm';
 import ProfileUpdateForm from './ProfileUpdateForm';
 import SignUpForm from './SignUpForm';
+import SignInForm from './SignInForm';
 /** List of Route components for routing
  *
  * props:
@@ -29,7 +29,7 @@ function RoutesList({ signup, login, update, currUser }) {
         :
         <>
           <Route path="/signup" element={<SignUpForm signup={signup} />} />
-          <Route path="/login" element={<LoginForm login={login} />} />
+          <Route path="/signin" element={<SignInForm login={login} />} />
         </>
       }
       <Route path="/" element={<HomePage />} />
