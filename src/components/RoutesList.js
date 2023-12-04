@@ -28,6 +28,7 @@ function RoutesList({ signup, login, update, currUser }) {
         </>
         :
         <>
+          <Route path="/market" element={<Market />} />
           <Route path="/signup" element={<SignUpForm signup={signup} />} />
           <Route path="/signin" element={<SignInForm login={login} />} />
         </>

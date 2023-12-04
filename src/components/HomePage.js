@@ -9,13 +9,12 @@ import {
   numberOne,
   eco
 } from "../generalPics";
-import { Navigate } from "react-router-dom";
 /** Component to render Home Page for PEEL
  *
  * RoutesList -> HomePage
  */
 function HomePage() {
-  
+
   const navigate = useNavigate();
 
   function sendToSignUp(){
@@ -59,7 +58,7 @@ function HomePage() {
                       </div>
                       <p className="p">Everything we need is just around the block!</p>
                     </div>
-                    <div className="div-wrapper">
+                    <div className="div-wrapper" onClick={sendToSignUp}>
                       <div className="text-wrapper-5" onClick={sendToSignUp}>Join PEEL</div>
                     </div>
                   </div>
