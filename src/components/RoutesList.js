@@ -2,9 +2,11 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import UserProfile from './UserProfile';
 import Market from './Market';
 import HomePage from './HomePage';
-import ProfileUpdateForm from './ProfileUpdateForm';
+import ProfilePage from './ProfilePage';
 import SignUpForm from './SignUpForm';
 import SignInForm from './SignInForm';
+import BusinessForm from './BusinessForm';
+import RequestList from './RequestList';
 /** List of Route components for routing
  *
  * props:
@@ -15,7 +17,7 @@ import SignInForm from './SignInForm';
  *
  * App -> RoutesList -> {HompePage, UserProfile, Market, Forms}
  */
-function RoutesList({ signup, login, update, currUser }) {
+function RoutesList({ signup, login, update, currUser, createBusiness }) {
   return (
 
     <Routes>
@@ -23,11 +25,18 @@ function RoutesList({ signup, login, update, currUser }) {
         ?
         <>
           <Route path="/market" element={<Market />} />
+          <Route path="/business" element={<BusinessForm
+            createBusiness={createBusiness}
+          />} />
           <Route path="/users/:username" element={<UserProfile />} />
-          <Route path="/profile" element={<ProfileUpdateForm update={update} />} />
+          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/requests" element={<RequestList />} />
         </>
         :
         <>
+          <Route path="/business" element={<BusinessForm
+            createBusiness={createBusiness}
+          />} />
           <Route path="/market" element={<Market />} />
           <Route path="/signup" element={<SignUpForm signup={signup} />} />
           <Route path="/signin" element={<SignInForm login={login} />} />

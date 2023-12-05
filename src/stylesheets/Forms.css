@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: normal;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
 }
 
 
@@ -13,7 +13,6 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 25px;
   justify-content: center;
   padding: 60px 120px 60px 120px;
   position: relative;
@@ -43,33 +42,39 @@
 
 .form-page .input-required {
   display: flex;
+  flex-direction:column;
   align-content: center;
   color: #2b2b2b;
-  height: 25px;
+  height: auto;
   position: relative;
+  margin: 10px;
   width: 460px;
 }
 
-.form-page .label {
-  text-align:right;
+.form-page label {
+  text-align:left;
   align-content: center;
-  display: flex;
-  justify-content: space-between;
+  display: block;
   font-family: "Poppins-Medium";
   width: 100%;
 }
-
-.form-page .label {
-  text-align:right;
+.form-page input{
+  text-align:left;
   align-content: center;
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  font-family: "Poppins-Medium";
+  width: 100%;
+}
+.form-page select{
+  text-align:left;
+  align-content: center;
+  display: block;
   font-family: "Poppins-Medium";
   width: 100%;
 }
 
 .form-page .text-block {
-  align-self: flex-end;
+  align-self: flex-start;
   background-color: var(--surfacelight);
   border: 1px solid;
   border-color: #5f6368;
@@ -77,11 +82,11 @@
   color: var(--text-secondary-grey3);
   font-family: "Poppins-Medium";
   padding: 12px;
-  width: 70%;
+  width: 100%;
 }
 
 .form-page .select-text-block {
-  align-self: flex-end;
+  align-self: flex-start;
   background-color: var(--surfacelight);
   border: 1px solid;
   border-color: #5f6368;
@@ -89,13 +94,12 @@
   color: var(--text-secondary-grey3);
   font-family: "Poppins-Medium";
   padding: 12px;
-  width: 40%;
+  width: 100%;
 }
 
 .form-page .input-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 35px;
 }
 
 .form-page .span {
@@ -109,27 +113,27 @@
 }
 
 
-
-.form-page .div {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  width: 30%;
-  position: absolute;
-  bottom: 90px;
-  right: 285px;
-}
-
-.form-page .button {
+.form-page button {
   align-items: center;
   background-color: var(--fb-9333);
   border-radius: 100px;
+  border: none;
   display: flex;
-  height: 45px;
+  height: auto;
   justify-content: center;
   padding: 10px 10px;
-  position: absolute;
+  position: relative;
   width: 150px;
+  color: var(--ffffff);
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 16px;
+  font-weight: 600;
+}
+.form-page .button-input {
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
 }
 
 .sign-up {

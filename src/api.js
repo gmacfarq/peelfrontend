@@ -36,6 +36,13 @@ class PEELApi {
 
   // Individual API routes
 
+   /** ----- BUSINESS API ROUTES ------ */
+
+  /** Create a product */
+  static async createBusiness(businessData){
+    let res = await this.request(`businesses/`, businessData, "POST");
+    return res.business;
+  }
 
    /** ----- PRODUCT API ROUTES ------ */
 

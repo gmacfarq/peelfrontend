@@ -34,55 +34,69 @@ function Nav({ logout }) {
   //               </button>
   //             </div>
   return (
-  <div className="nav-wrap">
-    <nav className="navbar">
-      <div className="logo-wrapper">
-        <div className="logo-frame">
+    <div className="nav-wrap">
+      <nav className="navbar">
+        <div className="logo-wrapper">
+          <div className="logo-frame">
+            <div>
+              <NavLink className="nav-link" to="/">
+                <img className="logo" alt="PEEL Logo" src={peelLogo} />
+              </NavLink>
+            </div>
+          </div>
+        </div>
+
+        <div className="nav-menu">
+          {currUser.data
+            ?
+            <>
+              <NavLink className="nav-link link-wrapper" to="/">
+                Home
+              </NavLink>
+              <NavLink className="nav-link link-wrapper" to="/requests">
+                Orders
+              </NavLink>
+              <NavLink className="nav-link link-wrapper" to="/market">
+                Market
+              </NavLink>
+              </>
+          : <>
+              <NavLink className="nav-link link-wrapper" to="/">
+                Home
+              </NavLink>
+              <NavLink className="nav-link link-wrapper" to="/#contact">
+                Contact
+              </NavLink>
+              <NavLink className="nav-link link-wrapper" to="/#about">
+                About Us
+              </NavLink>
+            </>
+          }
+
+        </div>
+
+        {currUser.data
+          ?
+          <div className='signed-in' >
+            <div className="div">
+              <p className="button" onClick={logoutAndSendHome}>
+                {`Log out`}
+              </p>
+            </div>
+            {/* <NavLink className="nav-link button" to="/profile">
+              <div className="div">My Profile</div>
+            </NavLink> */}
+          </div>
+          :
           <div>
-            <NavLink className="nav-link" to="/">
-              <img className="logo" alt="PEEL Logo" src={peelLogo} />
+            <NavLink className="nav-link button" to="/signin">
+              <div className="div">Sign In</div>
             </NavLink>
           </div>
-        </div>
-      </div>
+        }
 
-      <div className="nav-menu">
-        <NavLink className="nav-link link-wrapper" to="/market">
-          Market
-        </NavLink>
-        <NavLink className="nav-link link-wrapper" to="/">
-          Home
-        </NavLink>
-        <NavLink className="nav-link link-wrapper" to="/#contact">
-          Contact
-        </NavLink>
-        <NavLink className="nav-link link-wrapper" to="/#about">
-          About Us
-        </NavLink>
-      </div>
-
-      {currUser.data
-        ?
-        <div className='signed-in' >
-          <div className="div">
-            <p className="button" onClick={logoutAndSendHome}>
-              {`Log out`}
-            </p>
-          </div>
-          <NavLink className="nav-link button" to="/profile">
-            <div className="div">My Profile</div>
-          </NavLink>
-        </div>
-        :
-        <div>
-          <NavLink className="nav-link button" to="/signin">
-            <div className="div">Sign In</div>
-          </NavLink>
-        </div>
-      }
-
-    </nav>
-  </div>
+      </nav>
+    </div>
   );
 }
 

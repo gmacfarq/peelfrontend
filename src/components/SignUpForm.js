@@ -45,7 +45,7 @@ function SignUpForm({ signup }) {
     evt.preventDefault();
     try {
       await signup(formData);
-      navigate("/market");
+      navigate("/business");
     } catch (errs) {
       setAlerts(errs);
     }
@@ -66,102 +66,110 @@ function SignUpForm({ signup }) {
               <div className="input-required">
                 <label className="label" htmlFor="username">
                   Username*
-                  <input
-                    id="username"
-                    name="username"
-                    onChange={handleChange}
-                    value={formData.username}
-                    className="text-block"
-                    placeholder="Choose a username"
-                  />
                 </label>
+                <input
+                  id="username"
+                  name="username"
+                  onChange={handleChange}
+                  value={formData.username}
+                  className="text-block"
+                  placeholder="Choose a username"
+                />
+
               </div>
               <div className="input-required">
                 <label className="label" htmlFor="firstName">
                   First Name*
-                  <input
-                    id="firstName"
-                    name="firstName"
-                    onChange={handleChange}
-                    value={formData.firstName}
-                    className="text-block"
-                    placeholder="Your First Name"
-                  />
                 </label>
+                <input
+                  id="firstName"
+                  name="firstName"
+                  onChange={handleChange}
+                  value={formData.firstName}
+                  className="text-block"
+                  placeholder="Your First Name"
+                />
+
               </div>
               <div className="input-required">
                 <label className="label" htmlFor="lastName">
                   Last Name*
-                  <input
-                    id="lastName"
-                    name="lastName"
-                    onChange={handleChange}
-                    value={formData.lastName}
-                    className="text-block"
-                    placeholder="Your Last Name"
-                  />
                 </label>
+                <input
+                  id="lastName"
+                  name="lastName"
+                  onChange={handleChange}
+                  value={formData.lastName}
+                  className="text-block"
+                  placeholder="Your Last Name"
+                />
+
               </div>
               <div className="input-required">
                 <label className="label" htmlFor="email">
                   Email*
-                  <input
-                    id="email"
-                    name="email"
-                    onChange={handleChange}
-                    value={formData.email}
-                    className="text-block"
-                    type="email"
-                    placeholder="Your Email"
-                  />
                 </label>
+                <input
+                  id="email"
+                  name="email"
+                  onChange={handleChange}
+                  value={formData.email}
+                  className="text-block"
+                  type="email"
+                  placeholder="Your Email"
+                />
               </div>
               <div className="input-required">
                 <label className="label" htmlFor="password">
                   Password*
-                  <input
-                    id="password"
-                    name="password"
-                    onChange={handleChange}
-                    value={formData.password}
-                    className="text-block"
-                    type="password"
-                    placeholder="Password"
-                  />
                 </label>
+                <input
+                  id="password"
+                  name="password"
+                  onChange={handleChange}
+                  value={formData.password}
+                  className="text-block"
+                  type="password"
+                  placeholder="Password"
+                />
               </div>
               <div className="input-required">
                 <label className="label" htmlFor="confirmPassword">
                   Password*
-                  <input
-                    id="confirmPassword"
-                    name="confirmPassword"
-                    onChange={handleChange}
-                    value={formData.confirmPassword}
-                    className="text-block"
-                    type="password"
-                    placeholder="Password"
-                  />
                 </label>
+                <input
+                  id="confirmPassword"
+                  name="confirmPassword"
+                  onChange={handleChange}
+                  value={formData.confirmPassword}
+                  className="text-block"
+                  type="password"
+                  placeholder="Password"
+                />
               </div>
-              <div className="input-required">
-                <label className="label" htmlFor="isGrower">
-                  Grower/Buyer*
-                  <select
-                    id="isGrower"
-                    name="isGrower"
-                    onChange={handleChange}
-                    className="text-block"
-                  >
-                    <option value="Grower">Grower</option>
-                    <option value="Buyer">Buyer</option>
-                  </select>
-                </label>
-              </div>
-              <div className="div input-group">
-                <button className="button" onClick={handleSubmit}>
-                  Join PEEL!
-                </button>
+              <div className="button-input">
+                <div className="input-required">
+                  <div>
+                    <label className="label" htmlFor="isGrower">
+                      Grower/Buyer*
+                    </label>
+                    <select
+                      id="isGrower"
+                      name="isGrower"
+                      onChange={handleChange}
+                      className="select-text-block"
+                    >
+                      <option value="Grower">Grower</option>
+                      <option value="Buyer">Buyer</option>
+                    </select>
+                  </div>
+
+                </div>
+                <div>
+                  <button onClick={handleSubmit}>
+                    Next
+                  </button>
+                </div>
               </div>
             </div>
           </form>

@@ -84,6 +84,16 @@ function App() {
     });
   }
 
+  async function createBusiness(businessData){
+    const result = await PEELApi.createBusiness(businessData);
+    return result;
+  }
+
+  async function joinBusiness(businessId){
+    const result = await PEELApi.joinBusiness(businessId);
+    return result;
+  }
+
   if (!currUser.isLoaded) return (<Loader />)
 
   return (
@@ -91,7 +101,8 @@ function App() {
       <userContext.Provider value={{ currUser }}>
         <BrowserRouter>
           <Nav logout={logout} />
-          <RoutesList currUser={currUser.data} signup={signup} login={login} update={update} />
+          <RoutesList currUser={currUser.data} signup={signup} login={login} update={update}
+            createBusiness={createBusiness} />
           <Footer/>
         </BrowserRouter>
       </userContext.Provider>

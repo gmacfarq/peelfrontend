@@ -41,7 +41,7 @@ function SignInForm({ login }) {
   }
 
   /** navigate to signup */
-  function sendToSignUp(){
+  function sendToSignUp() {
     navigate("/signup");
   }
 
@@ -70,24 +70,29 @@ function SignInForm({ login }) {
                   />
                 </label>
               </div>
-              <div className="input-required">
-                <label className="label" htmlFor="password">
-                  Password*
-                  <input
-                    id="password"
-                    name="password"
-                    onChange={handleChange}
-                    value={formData.password}
-                    className="text-block"
-                    type="password"
-                    placeholder="Password"
-                  />
-                </label>
-              </div>
-              <div className="div">
-                <button className="button" onClick={handleSubmit}>
-                  Sign In!
-                </button>
+              <div className="button-input">
+                <div className="input-required">
+                  <div>
+
+                    <label className="label" htmlFor="password">
+                      Password*
+                    </label>
+                    <input
+                      id="password"
+                      name="password"
+                      onChange={handleChange}
+                      value={formData.password}
+                      className="text-block"
+                      type="password"
+                      placeholder="Password"
+                    />
+                  </div>
+                </div>
+                <div >
+                  <button onClick={handleSubmit}>
+                    Sign In!
+                  </button>
+                </div>
               </div>
             </div>
 
@@ -96,7 +101,11 @@ function SignInForm({ login }) {
         </div>
         <span>Don't have an account yet?</span>
         <br></br>
-        <p className="sign-up" onClick={sendToSignUp}>Sign Up!</p>
+        <p>
+        <span className="sign-up" onClick={sendToSignUp}>
+        Sign Up!
+        </span>
+        </p>
       </div>
     </div>
   );
