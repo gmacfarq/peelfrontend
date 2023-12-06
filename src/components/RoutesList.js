@@ -37,6 +37,7 @@ function RoutesList({ signup, login, update, currUser, createBusiness }) {
           <Route path="/business" element={<BusinessForm
             createBusiness={createBusiness}
           />} />
+          <Route path="/requests" element={<RequestList />} />
           <Route path="/market" element={<Market />} />
           <Route path="/signup" element={<SignUpForm signup={signup} />} />
           <Route path="/signin" element={<SignInForm login={login} />} />
