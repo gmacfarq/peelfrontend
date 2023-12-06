@@ -7,18 +7,17 @@
     align-items: center;
     gap: 24px;
     padding: 16px;
-    height: 60vh;
+    height: 100vh;
 
 }
 
 .list {
 
-    align-items: flex-start;
-    background: none;
-    border-radius: 12px;
     display: flex;
+    align-items: flex-start;
+    justify-content: top;
+    border-radius: 12px;
     flex-direction: column;
-    gap: 24px;
     padding: 16px;
     position: relative;
     width: 980px;
@@ -30,7 +29,7 @@
     align-self: stretch;
     background-color: transparent;
     display: flex;
-    flex: 0 0 auto;
+
     position: relative;
     width: 100%;
 }
