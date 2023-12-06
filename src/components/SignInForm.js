@@ -34,7 +34,7 @@ function SignInForm({ login }) {
     evt.preventDefault();
     try {
       await login(formData);
-      navigate("/market");
+      navigate("/requests");
     } catch (errs) {
       setAlerts(errs);
     }
