@@ -445,7 +445,7 @@
     top: 0;
 }
 
-.container .text-wrapper-8 {
+/* .container .text-wrapper-8 {
     color: #000000;
     font-family: "Poppins-Regular", Helvetica;
     font-size: 12px;
@@ -455,7 +455,7 @@
     line-height: normal;
     position: absolute;
     top: 38px;
-}
+} */
 
 .container .bars-2 {
     align-items: flex-start;
@@ -559,7 +559,7 @@
     width: 623px;
 }
 
-.container .card {
+/* .container .card {
     align-items: flex-start;
     background-color: var(--white);
     border-radius: 12px;
@@ -571,7 +571,7 @@
     padding: 16px;
     position: relative;
     width: 623px;
-}
+} */
 
 .container .header-2 {
     align-items: flex-start;
@@ -721,7 +721,7 @@
     position: relative;
 }
 
-.container .card-2 {
+/* .container .card-2 {
     align-items: center;
     background-color: var(--white);
     border: 1px solid;
@@ -736,7 +736,7 @@
     padding: 10px;
     position: relative;
     width: 141px;
-}
+} */
 
 .container .emoji-herb {
     height: 57px;

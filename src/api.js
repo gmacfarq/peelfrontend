@@ -36,7 +36,7 @@ class PEELApi {
 
   // Individual API routes
 
-   /** ----- BUSINESS API ROUTES ------ */
+  /** ----- BUSINESS API ROUTES ------ */
 
   /** Create a product */
   static async createBusiness(businessData){
@@ -44,7 +44,15 @@ class PEELApi {
     return res.business;
   }
 
-   /** ----- PRODUCT API ROUTES ------ */
+  /** ----- ORDER API ROUTES ------ */
+
+  /** Get details on orders by request id */
+  static async getOrders(requestId){
+    let res = await this.request(`orders/?requestId=${requestId}`);
+    return res.orders;
+  }
+
+  /** ----- PRODUCT API ROUTES ------ */
 
   /** Get details on a product by id. */
   static async getProduct(id) {

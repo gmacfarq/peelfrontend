@@ -1,0 +1,86 @@
+.order-list {
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    gap: 16px;
+    overflow: hidden;
+    padding: 8px 26px 8px 16px;
+    position: relative;
+}
+
+.order-list .rectangle {
+    height: 57px;
+    position: relative;
+    width: 57px;
+}
+
+.order-list .copy {
+    align-items: flex-start;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 4px;
+    position: relative;
+}
+
+.order-list .main-copy {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 12px;
+    position: relative;
+}
+
+.order-list .text-wrapper {
+    color: #212121;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+}
+
+.order-list .label-instance {
+    flex: 0 0 auto !important;
+}
+
+.order-list .div {
+    color: #8d8d8d;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+}
+
+.order-list .status {
+    color: #fb9333;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+}
+
+.order-list .text-wrapper-2 {
+    color: #707070;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+}

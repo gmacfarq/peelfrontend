@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import "../stylesheets/Profile.css";
+// import "../stylesheets/Profile.css";
 import '../stylesheets/StyleGuide.css';
 import userContext from './userContext';
 

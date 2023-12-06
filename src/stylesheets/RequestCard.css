@@ -1,0 +1,163 @@
+.request {
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    gap: 16px;
+    overflow: hidden;
+    padding: 8px 26px 8px 16px;
+    position: relative;
+}
+
+.request .group {
+    height: 57px;
+    position: relative;
+    width: 789px;
+}
+
+.request .emoji-tomato {
+    height: 53px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 57px;
+}
+
+.request .overlap-group {
+    height: 57px;
+    left: 73px;
+    position: absolute;
+    top: 0;
+    width: 716px;
+}
+
+.request .copy {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    left: 0;
+    position: absolute;
+    top: 5px;
+    width: 716px;
+}
+
+.request .main-copy {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 12px;
+    position: relative;
+}
+
+.request .label {
+    align-items: center;
+    background-color: #ff5f5733;
+    border-radius: 4px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 2px 6px;
+    position: relative;
+}
+
+.request .tomatoes {
+    color: #ff5f57;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+}
+
+.request .text-wrapper {
+    color: #8d8d8d;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+}
+
+.request .bar {
+    align-items: center;
+    border-radius: 4px;
+    display: flex;
+    height: 57px;
+    left: 130px;
+    position: absolute;
+    top: 0;
+    width: 211px;
+}
+
+.request .rectangle {
+    background-color: #fb9333;
+    border-radius: 4px;
+    height: 22px;
+    position: relative;
+    width: 211px;
+    margin-left: 25px;
+    z-index: 2;
+}
+.request .rectangle-2 {
+    background-color: #8d8d8d;
+    border-radius: 4px;
+    height: 22px;
+    position: relative;
+    width: 211px;
+    margin-right: 25px;
+    left: -5px;
+
+
+}
+
+.request .div {
+    color: #565656;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 12px;
+    font-weight: 600;
+    height: 21px;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-right: -89px;
+    position: relative;
+    text-align: center;
+    width: 89px;
+}
+
+.request .text-wrapper-2 {
+    color: #238b34cc;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+}
+
+.request .text-wrapper-3 {
+    color: #fb9333;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+}
+
+.request .details-icon {
+    position: relative;
+    width: 30px;
+}

@@ -3,11 +3,14 @@ const peelLogo = 'https://peel-general-pics.s3.us-west-1.amazonaws.com/peel-no-w
 const localization = 'https://peel-general-pics.s3.us-west-1.amazonaws.com/local.png';
 const numberOne ='https://peel-general-pics.s3.us-west-1.amazonaws.com/numero-uno.png';
 const eco ='https://peel-general-pics.s3.us-west-1.amazonaws.com/eco.png';
-// Export the URL strings
+const emojiTomato = 'https://peel-general-pics.s3.us-west-1.amazonaws.com/emoji+_tomato.svg';
+const orangeInfo = 'https://peel-general-pics.s3.us-west-1.amazonaws.com/round-information-orange-icon.svg';
 module.exports = {
   orangesPic,
   peelLogo,
   localization,
   numberOne,
-  eco
+  eco,
+  emojiTomato,
+  orangeInfo
 };
